@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button
+{
+    font-family: inherit;
+    font-size: .8vw;
+}
+
+::placeholder
+{
+    color: rgb(170, 170, 170);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root
+{
+    --themeColor: rgb(10, 94, 190);
+    --accentColor: rgb(255,255,255);
+    --transparentCover: rgba(0,0,0,0.4);
+}
+
+body
+{
+    font-family: Outfit, sans-serif;
+    overflow-x: hidden;
+}
+
+header
+{
+    height: 12vh;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;;
+    display: flex;
+    align-items: center;
+    font-size: .7vw;
+}
+
+#header
+{
+    display: flex;
+    align-items: center;
+    width: 50%;;
+    justify-content: center;
+    height: 100%;
+}
+#header h1
+{
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: 60%;
+}
+#header h1 span
+{
+    font-size: .9vw;;
+}
+#header img
+{
+    border-radius: 100%;;
+    width: 8%;
+    padding-inline-end: 3%;
+}
+nav
+{
+    width: 40%;
+    height: 100%;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    ;
+}
+nav ul li
+{
+    list-style-type: none;
+    margin: auto 1rem;
+    text-transform: uppercase;
+}
+
+#rp_intro 
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/lay-eggs-wooden-basket-wooden-floor.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: soft-light;
+}
+
+#rp_intro div:first-child
+{
+    display: grid;
+    place-items: center;
+    color: white;   
+    width: 70%;
+    height: 100%;
+}
+#rp_intro div:first-child article
+{
+    font-size: 3vw;
+    width: 70%;
+    font-weight: 500;
+}
+#rp_intro div:first-child span, #rp_intro div:first-child span::after, #rp_intro div:first-child span::before
+{
+    content: " ~ ";
+    text-transform: uppercase;
+}
+
+#rp_intro div:first-child button
+{
+    width: 20%;
+    height: 40px;
+    border-radius: 60px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#about
+{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about div{
+    width: 40%;
+    height: 90%;
+    background-image: url("../images/duck\ egg.png");
+    background-repeat: no-repeat;
+    filter: drop-shadow(16px 16px 24px rgba(0, 0, 0, 0.404));
+    background-size: 40%;
+    background-position: center;
+}
+#about section
+{
+    width: 30%;
+}
+#about section span
+{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .8vw;
+    color: chocolate;
+}
+#about section h1
+{
+    width: 70%;
+    font-size: 2vw;
+    font-weight: 500;
+    padding: .5% 0;
+}
+#about section p
+{
+    padding-block-end: 2%;
+}
+
+#services
+{
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/12151159_4880206.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: soft-light;
+}
+
+#services div:first-child
+{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 15%;;
+}
+#services div:first-child section
+{
+    text-align: center;
+}
+#services div:first-child section h1
+{
+    font-size: 2vw;
+    font-weight: 500;
+}
+#services div:first-child p
+{
+    font-weight: 200;
+}
+#services span, #services span:after, #services span:before
+{
+    text-transform: uppercase;
+    content: " ~ ";
+    font-size: .7vw;
+    color: chocolate;
+}
+
+#services div:last-child 
+{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services div:last-child section
+{
+    width: 25%;
+    margin: auto 1%;
+    background: white;
+    height: 90%;
+    box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.224);
+}
+#services div:last-child section figure
+{
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    background: chocolate;
+}
+
+#services div:last-child section figure
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#services div:last-child section:first-child figure
+{
+    background-image: url('../images/_7d8222f6-6a02-4f56-b21e-a71a817e9834.jpeg');
+}
+#services div:last-child section:last-child figure
+{
+    background-image: url('../images/quacking-duck-goose-family-enjoy-summer-pond-generated-by-ai.jpg');
+}
+
+#services div:last-child article
+{
+    width: 80%;
+    margin: 5% auto;
+    font-size: .8vw;
+}
+#services div:last-child article h1
+{
+    text-transform: uppercase;
+
+}
+
+#images 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+    height: 90vh;
+}
+
+#images div:first-child
+{
+    width: 25%;
+    margin: 0 1%;
+    height: 100%;
+}
+#images div:first-child figure
+{
+    width: 100%;
+    height: 45%;
+}
+
+#images div:last-child 
+{
+    width: 40%;
+    height: 100%;
+}
+#images div:last-child > figure
+{
+    width: 100%;
+    height: 50%;
+}
+#images div:last-child section
+{
+    display: flex;
+    height: 40%;
+}
+#images div:last-child section figure
+{
+    width: 45%;
+    height: 100%;
+    margin: auto 1%;
+}
+
+#images figure 
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#images div:first-child figure:first-of-type
+{
+    background-image: url('../images/wooden-bowl-with-fresh-raw-chicken-eggs\ \(1\).jpg');
+    margin-block-end: 5%;
+}
+#images div:first-child figure:last-child
+{
+    background-image: url('../images/wooden-bowl-with-fresh-raw-chicken-eggs.jpg');
+}
+#images div:last-child > figure
+{
+    background-image: url('../images/swans-family.jpg');
+}
+#images div:last-child section figure:first-of-type
+{
+    background-image: url('../images/group-ducklings-pond.jpg');
+}
+#images div:last-child section figure:last-of-type
+{
+    background-image: url('../images/closeup-beautiful-three-ducks-water.jpg');
+}
+
+#order
+{
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-blend-mode: soft-light;
+}
+#order section p
+{
+    text-transform: capitalize;
+    font-size: 2vw;
+}
+#order button
+{
+    transition: .5s;
+    width: 30%;
+    padding: 2% 0;
+    background-color: chocolate;
+    font-size: .9vw;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+#order button:hover
+{
+    cursor: pointer;
+    border: 1px solid chocolate;
+    background: transparent;
+    color: chocolate;
+}
+footer
+{
+    width: 100%;
+    color: white;
+    height: 40vh;
+    border-bottom: 10%;
+    display: flex;
+    background-image: url('../images/quacking-duck-goose-family-enjoy-summer-pond-generated-by-ai.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(40, 17, 0, 0.964);
+    background-blend-mode: soft-light;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p
+{
+    padding: 2% 0;
+}
+
+footer div
+{
+    display: grid;
+    place-items: center;
+    width: 25%;
+    padding-inline: 2%;
+    margin: 0 .2%;
+    height: 100%;;
+}
+footer div section
+{
+    width: 100%;
+    height: 70%;;
+}
+footer div:first-child section article
+{
+    font-size: .8vw;
+    width: 90%;
+    height: 30%;
+    margin-block-start: 2%;;
+}
+
+footer div:nth-child(2) input[type="email"]
+{
+    border: none;
+    width: 80%;
+    padding: 3%;
+    margin: 2% 0;
+}
+footer div:nth-child(2) input[type="submit"]
+{
+    margin-left: -1%;
+    border: none;
+    padding: 3%;
+    background: chocolate;
+    color: white;;
+}
+footer div:last-child article
+{
+    height: 20%;
+    margin: 2% 0;
+    line-height: 150%;;
+}
+footer div:last-child i
+{
+    margin: 0 2%;
+}
+footer span
+{
+    text-transform: lowercase;
+}

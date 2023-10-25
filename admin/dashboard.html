@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="mobileview/mqdashboard.css">
+    <script defer src="js/dashboard.js"></script>
+
+</head>
+<body>
+    <nav>
+        <p><span>&times;</span></p>
+        <ul>
+            <h2><img src="img/logo.jpg" alt="logo">Welcome, Admin</h2>
+            <li id="addBtn">Add Order</li>
+            <li id="updBtn">Update Order Status</li>
+            <li id="delBtn">Delete Order</li>
+        </ul>
+    </nav>
+
+    <div id="hamburger-cnt">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="add">
+        <form action="/add_order" method="post" autocomplete="off">
+            <input type="text" placeholder="Order ID" name="orderid">
+            <p>Order Received<select name="received">
+                <option value=""></option>
+                <option value="Order Received">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </p>  
+            <input type="submit" value="Add Order">
+        </form>
+    </div>
+
+    <div id="update">
+        <form action="/update_order" method="post" autocomplete="off">
+            <input type="text" placeholder="Order ID" name="orderid">
+            <p>Order Received<select name="received">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </p>  
+            <p>Order Packaged<select name="packaged">
+                
+                <option value=""></option><option value="Order Packaged">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </p>  
+            <p>Order in-Transit<select name="transit">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </p>  
+            <p>Order Delivered<select name="delivered">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </p>    
+            <input type="submit" value="Update Order">
+        </form>
+    </div>
+
+    <div id="delete">
+        <form action="/delete_order" method="post" autocomplete="off">
+            <input type="text" placeholder="Order ID" name="orderid">
+            <input type="submit" value="Delete Order">
+        </form>
+    </div>
+</body>
+</html>

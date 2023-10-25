@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script defer src="/js/index.js"></script>
+    <script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
+    <script defer src="js/order.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img src="./images/20230704_145359.png" alt="">
+            <h1>Royal Panary<!---<span>Farm Resort</span>--></h1>
+        </div>
+            <nav>
+                <ul>
+                    <a href="./"><li>Home</li></a>
+                    <a href="/order.html"><li>Products</li></a>
+                    <a href="/"><li>Logistics</li></a>
+                    <a id="btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></i></a>
+                </ul>
+            </nav>
+    </header>
+
+
+    <div id="order-intro">
+        <div><section>
+            <span><a href="./index.html">Home</a> / <a href="./order.html">Order Now</a></span>
+            <h1>Order Now</h1> 
+            <article>
+                Order Your Ducks and Duck Eggs from Royal Panary Farm Resort Today!
+            </article> 
+        </section></div>
+    </div>
+
+    <form id="cartForm">
+    <div id="products">
+            <section>
+                <figure></figure>
+                <figcaption>Duck Eggs (Per Egg)</figcaption>
+                <article>
+                    <span class="minus">-</span>&nbsp;&nbsp;<input type="number" name="eggsnumber" id="eggsnumber" placeholder="0">&nbsp;&nbsp;<span class="plus">+</span>
+                </article>
+            </section>
+            <section>
+                <figure></figure>
+                <figcaption>Duck</figcaption>
+                <article>
+                    <span class="minus">-</span>&nbsp;&nbsp;<input type="number" name="ducknumber" id="ducknumber" placeholder="0">&nbsp;&nbsp;<span class="plus">+</span>
+                </article>
+            </section>
+        </div>
+        <p onclick="updateValues()">Place Order</p>
+    </form>
+
+    <div id="absForm">
+        <form action="/order" method="post" id="absolute-form">
+            <p id="times">&times;</p>
+            <h2>Confirm Order</h2>
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number">
+            Amount of Duck Eggs: <input type="number" name="DuckEggs" value="" id="eggs">
+            Amount of Ducks: <input type="number" name="ducks" id="ducks" value="">
+            <input type="email" name="email" id="email" placeholder="Emaiil Address">
+            <input type="submit" value="Checkout">
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <section>
+                <h2>About Us</h2>
+                <article>
+                    Come and experience the charm of Royal Panary Farm Resort, where our passion for ducks and duck eggs is evident in everything we do. 
+                </article>
+                <article>
+                    Copyright ©2023 All rights reserved | Powered by Philanthropic Technologies
+                </article>
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Newsletter</h2>
+                <p>Stay updated with our latest</p>
+                <form action="">
+                    <input type="email" placeholder="Enter Emaiil" name="email" id="email">
+                    <input type="submit" value='Send'>
+                </form>
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Contact Us</h2>
+                <p>Let us be social</p>
+                <article>
+                    <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;<span>+639270471293</span><br>
+                    <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<span><a href="mailto:ancrzthefacon@gmail.com"> ancrzthefacon@gmail.com </a></span>
+                </article>
+            </section>
+        </div>
+    </footer>
+    </body>
+    </html>

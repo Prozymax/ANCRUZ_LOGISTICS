@@ -1,0 +1,72 @@
+#about_intro
+{
+    height: 80vh;
+    background-image: url('/img/business-man-holding-paper-with-why-choose-us-question.jpg');
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+#about_intro div
+{
+    margin: 0;
+}
+
+#history    
+{
+    height: 80vh;
+    background-color: transparent;
+    color: black;
+}
+
+#history section
+{
+    height: 0%;
+}
+
+#history figure
+{
+    height: 100%;
+    background-image: url('/img/sorry-dont-know-portrait-clueless-african-american-unbothered-guy-shrugging-smiling-cant-tell-have-no-answers.jpg');
+}
+#history h3
+{
+    color: var(--themeColor);
+}
+
+#vects
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+
+#vects section
+{
+    width: 20%;
+    height: 50%;
+    padding: 2% 1%;;
+    margin: 0 .5%;;
+}
+
+#vects i
+{
+    font-size: 2vw;
+    margin: 2% 0;
+    color: var(--themeColor);
+}
+#vects h4
+{
+    font-size: 1.2vw;;
+}
+
+#pquote
+{
+    text-align: center;
+    font-size: 1vw;
+}
+#pquote a
+{
+    padding: 0 5%;
+    color: var(--themeColor);
+}

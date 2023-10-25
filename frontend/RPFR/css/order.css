@@ -1,0 +1,202 @@
+#order-intro 
+{
+    width: 100%;
+    background-image: url('../images/top-view-white-chicken-eggs-inside-female-hands-dark-table.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh;
+    color: white;
+    background-position: center;
+    background-color: rgba(20, 5, 0, 0.785);
+    background-blend-mode: soft-light;
+}
+button
+{
+    font-family: inherit;
+}
+#order-intro div
+{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+#order-intro section
+{
+    text-align: center;
+}
+#order-intro span a
+{
+    font-size: .8vw;
+}#order-intro span a:hover{text-decoration: underline;}
+#order-intro section h1
+{
+    font-size: 4vw;
+}#order-intro article
+{
+    font-size: 100%;
+}
+
+#products 
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+#products section
+{
+    width: 25%;
+    height: 80%;
+    box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.154);
+    margin-inline: .5%;;
+}
+#products figure
+{
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#products figcaption
+{
+    padding: 1% 2%;
+    font-size: 1.2vw;
+}
+
+#products section:first-child figure
+{
+    background-image: url('/img/white-chicken-egg-red-table.jpg');
+}
+#products section:last-child figure
+{
+    background-image: url('/img/white-goose-bird.jpg');
+}
+#products button
+{
+    background: chocolate;
+    color: white;
+    width: 30%;
+    padding: 3% 0;
+    margin-inline: 2%;
+    border: none;
+}
+#products article
+{
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+    height: 10%;
+}
+#qty{color: chocolate;font-size: 1vw;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.154);
+    padding: 1% 2%
+}
+
+input[type='number']
+{
+    width: 10%0;
+}
+
+#products input[type='number']
+{
+    width: 30%;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    height: 2vh;
+    padding: 4% 0;
+    padding-inline-start: 2%;
+    font-size: .9vw;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.144);
+}
+
+input:focus, input:hover
+{
+    border: none;
+    outline: none;
+}
+
+#cartForm p
+{
+    border: none;
+    width: 10%;
+    padding: 1% 0;
+    color: rgb(211, 95, 12);
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.539);
+    transition: .5s;
+    text-align: center;
+    margin: 0 auto;
+    margin-block: 2%;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.153);;
+}
+#cartForm p:hover
+{
+    background-color: chocolate;
+    color: white;;
+}
+
+#absForm
+{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.713);
+    align-items: center;
+    justify-content: center;;
+}
+
+#absForm form
+{
+    position: relative;
+    width: 30%;
+    height: 40%;
+    padding: 3% 2%;
+    background: white;;
+}
+#absForm input 
+{
+    width: 90%;
+    height: 8%;
+    border: none;
+    border-bottom: 1px solid black;;
+    margin: 2% 0;
+}
+
+#absForm input[type='submit']
+{
+    width: 30%;
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#absForm p:first-child
+{
+    color: black;
+    font-size: 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1% 3%;
+}
+
+#absForm p:first-child:hover
+{
+    color: white;
+    cursor: pointer;
+    background-color: red;;
+}

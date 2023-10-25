@@ -1,0 +1,23 @@
+#about_intro
+{
+    background-image: url('/img/happy-engineer-young-black-worker-handshaking-while-greeting-industrial-building.jpg');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: bottom;
+}
+
+#partners
+{
+    margin-block: 5% 3%;
+}
+
+#partners img
+{
+    filter: grayscale(100%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#partners img:hover
+{
+    filter: grayscale(0%);
+}

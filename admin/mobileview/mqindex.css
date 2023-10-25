@@ -1,0 +1,58 @@
+:root
+{
+    --themeColor: rgb(3, 52, 109);
+    --accentColor: rgb(255,255,255);
+    --transparentCover: rgba(0,0,0,0.4);
+}
+
+body
+{
+    height: 100vh;
+    display: grid;
+    background: rgb(1, 42, 89);
+    place-items: center;;
+}
+
+#adminForm 
+{
+    width: 95%;
+    height: 70%;
+    display: block;
+}
+
+#adminForm form 
+{
+    width: 90%;
+    margin: 0 auto;
+    height: 40%;
+}
+
+input[type="text"] 
+{
+    width: 95%;
+    font-size: 80%;
+}
+figure
+{
+    width: 100%;
+    height: 60%;;
+}
+
+h3
+{
+    font-size: 150%;
+    padding: 4% 0;
+    align-items: center;
+    display: flex;
+}
+
+input[type="submit"]
+{
+    padding: 4% 0;
+    font-size: 80%;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.397);
+}
+
+img {
+    width: 10%;
+}

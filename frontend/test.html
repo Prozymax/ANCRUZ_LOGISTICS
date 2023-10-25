@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form test</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/mail.js"></script>
+</head>
+<body>
+    <div id="forms">
+        <form action="">
+            <span>Contact Us</span>
+            <h2>Write a message</h2>
+
+            <input type="text" placeholder="Your Name" id="name" name="fullname">
+            <input type="email" placeholder="Email Address" name="email" id="email">
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone">
+            <input type="text" placeholder="Subject" id="subject">
+            <textarea name="message" placeholder="Message" id="mess"></textarea><br>
+            <input type="submit" value="" onclick="sendMail()">
+        </form>
+
+
+
+        <script>
+            function sendMail() {
+                alert("sendiugn..")
+                Email.send({
+                Host : "smtp.mailtrap.io",
+                Username : "d65b7cf591a931",
+                Password : "6f31e6495b40ee",
+                To : 'maxwellprosper76@gmail.com',
+                From : "prospermaxwell901@gmail.com",
+                Subject : "Test Email",
+                Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+            }).then(
+                message => alert(message)
+            );
+                        }
+        </script>
+</body>
+</html>

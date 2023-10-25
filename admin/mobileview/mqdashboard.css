@@ -1,0 +1,126 @@
+@media only screen and (max-width: 900px)
+{
+    :root
+{
+    --themeColor: rgb(3, 52, 109);
+    --accentColor: rgb(255,255,255);
+    --transparentCover: rgba(0,0,0,0.4);
+}
+
+body
+{
+    height: 100vh;
+    background: rgb(1, 42, 89);
+}
+
+nav
+{
+    width: 70%;
+    float: none;
+    position: absolute;
+    transition: .5s;
+    background-color: var(--themeColor);
+    margin-left: -80%;
+}
+
+nav li
+{
+    list-style-type: none;
+    font-size: 90%;
+}
+
+
+nav h2
+{
+    
+    font-size: 120%;
+}
+
+nav img
+{
+    width: 10%;
+}
+
+nav p 
+{
+    display: block;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 0;
+    background: none;
+}
+
+nav p span
+{
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    right: -10%;
+    top: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+#hamburger-cnt
+{
+    display:block;
+    width: 14%;
+    height: 40px;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+}
+
+#hamburger-cnt div
+{
+    width: 90%;
+    height: 10px;
+    margin: 4% 0;
+    border-radius: 30px;
+    background: white;;
+}
+
+div
+{
+    width: 100%;
+    height: 100vh;
+}
+
+form
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+form input
+{
+    width: 90%;
+    height: 60px;
+    font-size: 100%;
+}
+
+p
+{
+    width: 80%;
+}
+
+select
+{
+    width: 50%;
+    height: 20px;
+}
+option
+{
+    width: 100%;
+}
+
+input[type="submit"] 
+{
+    font-size: 80%;
+    height: 50px;
+    width: 50%;
+}
+
+}
